@@ -5,7 +5,10 @@ public class ForrItchi {
         int[] novo = {1,2,3,4,5,6};
 
         for(int num : novo){
-            System.out.println(num);
+            System.out.print(num + "    ");
         }
+
+
+
     }
 }

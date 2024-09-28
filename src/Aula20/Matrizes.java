@@ -30,5 +30,12 @@ public class Matrizes {
             }
             System.out.println();
         }
+
+        for (double[] notasAlunos : notaAlunos){
+            for(double nota: notasAlunos){
+                System.out.print(nota + " /_/ ");
+            }
+            System.out.println(" ");
+        }
     }
 }
