@@ -5,18 +5,26 @@ public class ContaCorrente {
     int numero;
     double saldo;
     boolean especial;
-    double limite;
+    double limiteEspecial;
+    double valorEspecialUsado;
 
-    void saque(double quantiaASacar){
-        if(saldo >= quantiaASacar ){
-            saldo -= quantiaASacar;
+    boolean realizarSaque(double quantiaSaque){
+        if(saldo >= quantiaSaque){
+            saldo -= quantiaSaque;
             return true;
         } else{
             if(especial){
-
-            } else{
+                double limite = limiteEspecial-saldo;
+                if(limite >= quantiaSaque){
+                    saldo -= quantiaSaque;
+                    return true;
+                }else{
+                    return false;
+                }
+            }else{
                 return false;
             }
         }
     }
 }
+

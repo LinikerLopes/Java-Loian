@@ -18,5 +18,12 @@ public class Carro {
         double qtdCombustivel = km/consumoCombustivel;
         return qtdCombustivel;
     }
+
+    void infoCarros(){
+        System.out.println(marca);
+        System.out.println(modelo);
+        System.out.println(numPassageiros);
+        System.out.println(capCombustivel);
+    }
 }
 

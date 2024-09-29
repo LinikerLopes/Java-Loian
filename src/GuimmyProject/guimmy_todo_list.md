@@ -1,6 +1,6 @@
 Vamos criar um sistema de console simples que simule um gerenciamento de biblioteca, utilizando os principais conceitos da Programação Orientada a Objetos (POO). Esse sistema deve conter as seguintes funcionalidades:
 
-# Cadastro de livros.
+## Cadastro de livros.
 Empréstimo e devolução de livros.
 Listagem de livros disponíveis.
 Registro de histórico de empréstimos.
@@ -18,7 +18,7 @@ Polimorfismo: Permite que métodos com o mesmo nome se comportem de maneira dife
 
 Abstração: Enfatiza os aspectos essenciais e esconde detalhes supérfluos. No nosso exemplo, abstraímos o funcionamento detalhado de um sistema de gerenciamento real, simplificando o processo de empréstimo.
 
-# Estrutura do Sistema
+## Estrutura do Sistema
 
 Classes Principais
 Livro
@@ -34,7 +34,7 @@ Biblioteca
 Atributos: listaDeLivros, historicoEmprestimos.
 Métodos: adicionarLivro, listarLivrosDisponiveis, registrarEmprestimo, listarHistorico.
 
-# Explicação do Código
+## Explicação do Código
 
 Classe Livro:
 
