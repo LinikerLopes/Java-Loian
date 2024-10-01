@@ -11,9 +11,13 @@ public class Livro {
     //métodos
 
         //emprestar
-
+    void emprestarLivro(){
+        //aqui mudar estado de disponivel para false
+    }
         //devolver
-
+    void devolverLivro(){
+        //aqui mudar estado de disponivel para true
+}
         //exibirInfo
 
     void exibirInfo(){

@@ -1,5 +1,5 @@
 package GuimmyProject;
 
-public class ListaLivros {
+public class Biblioteca {
 
 }

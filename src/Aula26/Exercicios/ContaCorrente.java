@@ -14,7 +14,7 @@ public class ContaCorrente {
             return true;
         } else{
             if(especial){
-                double limite = limiteEspecial-saldo;
+                double limite = limiteEspecial + saldo;
                 if(limite >= quantiaSaque){
                     saldo -= quantiaSaque;
                     return true;
@@ -26,5 +26,18 @@ public class ContaCorrente {
             }
         }
     }
+
+    void depositar(double valorDepositado){
+        saldo += valorDepositado;
+    }
+
+    void consultarSaldo(){
+        System.out.println("Saldo da conta: " + saldo);
+        System.out.println("Saldo limite especial: " + limiteEspecial);
+    }
+    boolean verificarChequeEspecial(){
+        return saldo <= 0;
+    }
+
 }
 
