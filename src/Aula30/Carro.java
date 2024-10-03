@@ -8,21 +8,47 @@ public class Carro {
     double capCombustivel;
     double consumoCombustivel;
 
-    public Carro(){ }
+    public Carro(String fiat, String ducato) {
+    }
 
-    public Carro(String marca /*e esse narca é o parametro*/, String modelo, int numPassageiros, double capCombustivel, double consumoCombustivel) {
-        this.marca = marca; // deixa explicito que esse this.marca é um atributo da classe
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
         this.modelo = modelo;
+    }
+
+    public int getNumPassageiros() {
+        return numPassageiros;
+    }
+
+    public void setNumPassageiros(int numPassageiros) {
         this.numPassageiros = numPassageiros;
-        System.out.println("Chamando o construtor com 3 parametros");
-
-    }
-    public Carro (String marca, String modelo){
-        this(modelo, marca, 10);
-        System.out.println("Chamando o construtor com 2 parametros");
     }
 
-    public Carro(String modelo, String marca, int i) {
+    public double getCapCombustivel() {
+        return capCombustivel;
+    }
+
+    public void setCapCombustivel(double capCombustivel) {
+        this.capCombustivel = capCombustivel;
+    }
+
+    public double getConsumoCombustivel() {
+        return consumoCombustivel;
+    }
+
+    public void setConsumoCombustivel(double consumoCombustivel) {
+        this.consumoCombustivel = consumoCombustivel;
     }
 }
 
