@@ -1,7 +1,4 @@
-package Aula36RelacionamentoClasses.Exercicios;
-
-import Aula36RelacionamentoClasses.Endereco;
-import Aula36RelacionamentoClasses.Telefone;
+package Aula36RelacionamentoClasses.Exercicios.Exec01;
 
 public class Contato {
     private String nome;
@@ -30,5 +27,9 @@ public class Contato {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String obterInfo(){
+        return "Nome = " + nome + "; Telefone = " + telefone + "; Email " + email;
     }
 }

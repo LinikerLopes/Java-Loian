@@ -1,4 +1,4 @@
-package Aula36RelacionamentoClasses.Exercicios;
+package Aula36RelacionamentoClasses.Exercicios.Exec01;
 //https://www.slideshare.net/slideshow/curso-java-basico-exercicios-aula-36/52866993
 
 import java.util.Scanner;
@@ -30,7 +30,10 @@ public class Program {
         }
         agenda.setContatos(contato);
 
-        System.out.println();
+        if(agenda != null){
+            System.out.println(agenda.obterInfo());
+        }
+
 
         System.out.println(nome);
 
