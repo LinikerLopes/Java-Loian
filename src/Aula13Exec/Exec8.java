@@ -20,10 +20,10 @@ public class Exec8 {
         double salarioHora = (salarioMensal / 30) /60;
 
         System.out.println("======================================");
-        System.out.println("Você trabalha " + horasTrabalhadas + " todo mês");
+        System.out.println("Você trabalha " + horasTrabalhadas + " horas por dia todo mês");
         System.out.println("com um salário de " + salarioMensal + " por mês");
         System.out.println("Isso fica em torno de " + horasMensal + " horas por mês");
-        System.out.printf("e um salário de %.2f ", salarioHora);
+        System.out.printf("e um salário de R$ %.2f ", salarioHora);
         if(salarioHora < 1) {
             System.out.println("centavos por hora.");
         } else{
@@ -63,10 +63,10 @@ public class Exec8 {
             double cotacaoUSD = usdBrl.get("bid").getAsDouble();
 
             // Exibir a cotação do dólar
-            System.out.printf("Cotação do dólar: R$ " + cotacaoUSD);
+            System.out.printf("Cotação do dólar: R$ %.2f", cotacaoUSD);
             System.out.println();
             double salarioConvertidoDolar =  salarioMensal / cotacaoUSD;
-            System.out.printf("Convertidos, você recebe por mês um total de " + salarioConvertidoDolar);
+            System.out.printf("Convertidos, você recebe por mês um total de U$ %.2f", salarioConvertidoDolar);
             System.out.println(" dólares");
 
         } catch (Exception e) {
