@@ -48,11 +48,13 @@ sc.nextLine();
 
 
         do{
-            System.out.println("Digite seu sexo: ");
+            System.out.println("Digite seu sexo ->  M - masculino ou F - feminino: ");
             sexo = sc.nextLine();
             if(sexo.equalsIgnoreCase("m")){
+                sexo = "Masculino";
                 validar = true;
             } else if(sexo.equalsIgnoreCase("f")){
+                sexo = "Feminino";
                 validar = true;
 
             } else{
@@ -70,12 +72,16 @@ sc.nextLine();
 
             estadoCivil = sc.nextLine();
             if(estadoCivil.equalsIgnoreCase("s")){
+                estadoCivil  ="solteiro/a";
                 validar = true;
             } else if(estadoCivil.equalsIgnoreCase("c")){
+                estadoCivil  ="casado/a";
                 validar = true;
             } else if(estadoCivil.equalsIgnoreCase("d")){
+                estadoCivil  ="divorciado/a";
                 validar = true;
             } else if(estadoCivil.equalsIgnoreCase("v")){
+                estadoCivil  ="viuvo/a";
                 validar = true;
             }
             else{
