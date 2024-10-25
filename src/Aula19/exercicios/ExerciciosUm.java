@@ -17,5 +17,6 @@ public class ExerciciosUm {
 
                     B[i] = A[i];
         }
+
     }
 }
