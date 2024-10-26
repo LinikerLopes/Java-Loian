@@ -29,5 +29,30 @@ public class forAB {
         }
         System.out.println();
     }
-    }
+}
+
+
+
+    // tentar entender
+
+
+   /* public void declaracaoComCSub(int[] A, int B[], int[] C) {
+        System.out.print("A = ");
+        for (int i = 0; i < A.length; i++) {
+            System.out.print(A[i] + " ");
+        }
+        System.out.println();
+
+        System.out.print("B = ");
+        for (int i = 0; i < B.length; i++) {
+            System.out.print(B[i] + " ");
+        }
+        System.out.print("C = ");
+        for (int i = 0; i < B.length; i++) {
+            System.out.print(C[i] + " ");
+        }
+        System.out.println();*/
+
+
+
 
