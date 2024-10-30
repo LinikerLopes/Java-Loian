@@ -1,5 +1,7 @@
 package Aula24;
 
+import Aula24.Exercicios.Exec1;
+
 public class TesteCarro {
     public static void main (String[] args){
         Carro van = new Carro();
@@ -20,5 +22,6 @@ public class TesteCarro {
         System.out.println(van.modelo);
         System.out.println(fusca.marca);
         System.out.println(fusca.modelo);
+
     }
 }
