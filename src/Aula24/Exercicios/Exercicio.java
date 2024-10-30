@@ -23,6 +23,12 @@ public class Exercicio {
         lampada.kw = 10;
         lampada.consumoEnergiaHora = 1.0;
 
+            Exec1 dados = new Exec1();
+
+            dados.cor = "Azul";
+            dados.tipo = "Redondo";
+
+            dados.dadosVeiculo();
 
 
     }

@@ -2,9 +2,9 @@ package Aula21;
 
 public class ForrItchi {
     public static void main(String[] args){
-        int[] novo = {1,2,3,4,5,6};
+        String[] novo = {"1,2,3,4,5,6","Nicaragua", "Japao"};
 
-        for(int num : novo){
+        for(String num : novo){
             System.out.print(num + "    ");
         }
 
