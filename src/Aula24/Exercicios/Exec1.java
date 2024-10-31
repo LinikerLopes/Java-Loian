@@ -15,4 +15,7 @@ public class Exec1 {
     }
 
 
+    public void ligar() {
+
+    }
 }

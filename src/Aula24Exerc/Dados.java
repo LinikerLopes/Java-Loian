@@ -17,4 +17,10 @@ public class Dados {
         System.out.println("TOTAL DO INVESTIMENTO: ");
         return saldoConta * inss;
     }
+
+    double calcularRetorno(double retorno){
+        double salario = retorno + inss;
+        return salario;
+    }
+
 }
