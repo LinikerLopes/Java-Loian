@@ -10,7 +10,7 @@ public class teste2 {
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
             // Cria um botão e o adiciona à janela
-            JButton button = new JButton("Clique Aqui!");
+            JButton button = new JButton("Botão");
             frame.add(button);
 
             // Torna a janela visível
