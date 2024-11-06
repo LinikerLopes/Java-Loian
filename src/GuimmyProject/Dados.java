@@ -7,13 +7,13 @@ public class Dados {
         System.out.println("==============================");
     }
     void menu(){
-        System.out.println();
-        System.out.println("Selecione uma opção: ");
-        System.out.println("1-: ");
-        System.out.println("2-: ");
-        System.out.println("3-: ");
-        System.out.println("4-: ");
-        System.out.println("5-: ");
+            System.out.println();
+            System.out.println("Selecione uma opção: ");
+            System.out.println("1-: ");
+            System.out.println("2-: ");
+            System.out.println("3-: ");
+            System.out.println("4-: ");
+            System.out.println("5-: ");
     }
     int menu (int opcao){
         switch(opcao){

@@ -19,7 +19,7 @@ public class Exec5 {
             System.out.println("Digite 0 para sair.");
 
             opcao = sc.nextInt();
-
+//======================================================================================================================
             if (opcao == 1) {
                 boolean diaValido = false;
                 int dia = 0;
@@ -66,7 +66,7 @@ public class Exec5 {
                 dia--;
                 System.out.println("Digite o compromisso");
                 compromissos[dia][hora][mes] = sc.nextLine();
-
+//======================================================================================================================
             } else if (opcao == 2) {
                 boolean diaValido = false;
                 int dia = 0;
@@ -105,6 +105,8 @@ public class Exec5 {
                 dia--;
                 System.out.println("O compromisso agendado é: ");
                 System.out.println(compromissos[dia][hora][mes]);
+
+//======================================================================================================================
             } else if (opcao == 0) {
                 sair = true;
             } else {
