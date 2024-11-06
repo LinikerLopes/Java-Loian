@@ -22,7 +22,7 @@ public class Exec4 {
 
         if(opcao == 1){
 boolean diaValido = false;
-int dia;
+int dia = 0;
 
 while(!diaValido) {
     System.out.println("Digite o dia do mês: ");
@@ -34,7 +34,7 @@ while(!diaValido) {
     }
 }
 boolean horaValida =  false;
-int hora;
+int hora = 0;
             while(!horaValida) {
                 System.out.println("Digite a hora: ");
                 hora = sc.nextInt();
@@ -50,13 +50,38 @@ int hora;
 
                 }
             }
+            sc.nextLine();
+            dia--;
+            System.out.println("Digite o compromisso");
+            compromissos [dia][hora] = sc.nextLine();
+
         } else if(opcao == 2){
-                for (int i = 0; i < compromissos.length; i++){
-                    for (int j = 0; j < compromissos[i]. length;j++){
-                        System.out.print(compromissos[i][j] + " _ ");
-                    }
-                    System.out.println();
+            boolean diaValido = false;
+            int dia = 0;
+
+            while(!diaValido) {
+                System.out.println("Digite o dia do mês: ");
+                dia = sc.nextInt();
+                if (dia > 0 && dia <= 31) {
+                    diaValido = true;
+                }else{
+                    System.out.println("Digite novamente, dia invalido");
                 }
+            }
+            boolean horaValida =  false;
+            int hora = 0;
+            while(!horaValida) {
+                System.out.println("Digite a hora: ");
+                hora = sc.nextInt();
+                if (hora > 0 && hora <= 24) {
+                    horaValida = true;
+                }else{
+                    System.out.println("Digite novamente, dia invalido");
+                }
+            }
+            dia--;
+            System.out.println("O compromisso agendado é: ");
+            System.out.println(compromissos[dia][hora]);
         }else if (opcao == 0) {
             sair = true;
         }else{
