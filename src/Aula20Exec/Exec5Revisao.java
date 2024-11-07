@@ -6,9 +6,11 @@ public class Exec5Revisao {
     public static void main(String[] args) {
 
         Scanner sc =new Scanner(System.in);
+        final int meS = 12;
+        final int diaS = 31;
+        final int horaS = 24;
 
-
-        String[][][] compromissos = new String[12][31][8];
+        String[][][] compromissos = new String[meS][diaS][horaS];
 boolean opcao = false;
 
         while(!opcao){
@@ -26,7 +28,7 @@ boolean opcao = false;
                 while (!mesValido) {
                     System.out.println("Digite o mês: ");
                     mes = sc.nextInt();
-                    if(mes > 0 && mes <= 12){
+                    if(mes > 0 && mes <= meS){
                         mesValido = true;
                     }else {
                         System.out.println("Mês digitado é invalido.Tente novamente");
@@ -38,7 +40,7 @@ boolean opcao = false;
                 while(!diaValido){
                     System.out.println("Digite o dia: ");
                     dia = sc.nextInt();
-                    if(dia > 0 && dia <= 31){
+                    if(dia > 0 && dia <= diaS){
                         diaValido = true;
                     }else{
                         System.out.println("Dia digitado é invalido. Tente novamente");
@@ -50,7 +52,7 @@ boolean opcao = false;
                  while(!horaValida){
                      System.out.println("Digite a hora:");
                      hora = sc.nextInt();
-                     if(hora > 0 && hora <= 8){
+                     if(hora > 0 && hora <= horaS){
                          horaValida= true;
                      }else{
                          System.out.println("Hora digitada é invalida. Tente novamente");
@@ -69,7 +71,7 @@ boolean opcao = false;
                 while (!mesValido) {
                     System.out.println("Digite o mês: ");
                     mes = sc.nextInt();
-                    if(mes > 0 && mes <= 12){
+                    if(mes > 0 && mes <= meS){
                         mesValido = true;
                     }else {
                         System.out.println("Mês digitado é invalido.Tente novamente");
@@ -81,7 +83,7 @@ boolean opcao = false;
                 while(!diaValido){
                     System.out.println("Digite o dia: ");
                     dia = sc.nextInt();
-                    if(dia > 0 && dia <= 31){
+                    if(dia > 0 && dia <= diaS){
                         diaValido = true;
                     }else{
                         System.out.println("Dia digitado é invalido. Tente novamente");
@@ -93,7 +95,7 @@ boolean opcao = false;
                 while(!horaValida){
                     System.out.println("Digite a hora:");
                     hora = sc.nextInt();
-                    if(hora > 0 && hora <= 8){
+                    if(hora > 0 && hora <= horaS){
                         horaValida= true;
                     }else{
                         System.out.println("Hora digitada é invalida. Tente novamente");
@@ -116,7 +118,7 @@ boolean opcao = false;
                 while (!mesValido) {
                     System.out.println("Digite o mês: ");
                     mes = sc.nextInt();
-                    if(mes > 0 && mes <= 12){
+                    if(mes > 0 && mes <= meS){
                         mesValido = true;
                     }else {
                         System.out.println("Mês digitado é invalido.Tente novamente");
@@ -128,7 +130,7 @@ boolean opcao = false;
                 while(!diaValido){
                     System.out.println("Digite o dia: ");
                     dia = sc.nextInt();
-                    if(dia > 0 && dia <= 31){
+                    if(dia > 0 && dia <= diaS){
                         diaValido = true;
                     }else{
                         System.out.println("Dia digitado é invalido. Tente novamente");
@@ -140,7 +142,7 @@ boolean opcao = false;
                 while(!horaValida){
                     System.out.println("Digite a hora:");
                     hora = sc.nextInt();
-                    if(hora > 0 && hora <= 8){
+                    if(hora > 0 && hora <= horaS){
                         horaValida= true;
                     }else{
                         System.out.println("Hora digitada é invalida. Tente novamente");
@@ -178,7 +180,7 @@ boolean opcao = false;
                 while (!mesValido) {
                     System.out.println("Digite o mês: ");
                     mes = sc.nextInt();
-                    if(mes > 0 && mes <= 12){
+                    if(mes > 0 && mes <= meS){
                         mesValido = true;
                     }else {
                         System.out.println("Mês digitado é invalido.Tente novamente");
@@ -190,7 +192,7 @@ boolean opcao = false;
                 while(!diaValido){
                     System.out.println("Digite o dia: ");
                     dia = sc.nextInt();
-                    if(dia > 0 && dia <= 31){
+                    if(dia > 0 && dia <= diaS){
                         diaValido = true;
                     }else{
                         System.out.println("Dia digitado é invalido. Tente novamente");
@@ -202,7 +204,7 @@ boolean opcao = false;
                 while(!horaValida){
                     System.out.println("Digite a hora:");
                     hora = sc.nextInt();
-                    if(hora > 0 && hora <= 8){
+                    if(hora > 0 && hora <= horaS){
                         horaValida= true;
                     }else{
                         System.out.println("Hora digitada é invalida. Tente novamente");

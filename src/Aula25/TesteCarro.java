@@ -14,7 +14,7 @@ public class TesteCarro {
         System.out.println(van.marca);
         System.out.println(van.modelo);
 
-        van.exibirAutonomia(); // boa prática sempre começa com verbo
+        van.exibirAutonomia(); // boa prática sempre começar com verbo
 
     }
 }
