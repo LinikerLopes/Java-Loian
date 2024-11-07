@@ -15,10 +15,6 @@ public class TesteExercicio {
         lampada.ligar();
 
         lampada.mostrarEstado();
-
-        lampada.desligar();
-        lampada.mostrarEstado();
-        lampada.mudarEstado();
             }
             }
 
