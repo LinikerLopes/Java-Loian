@@ -20,13 +20,14 @@ public class MainAluno {
 
         for (int i = 0; i < aluno.disciplinas.length; i++){
             System.out.println("Escreva o nome da discipliona");
-            aluno.disciplinas[i] = new String[]{sc.nextLine()};
+            aluno.disciplinas[i] = sc.nextLine();
         }
-        for (int i = 0; i < aluno.disciplinas.length; i++){
-            for (int j = 0; j < aluno.disciplinas[i]. length;j++){
+        for (int i = 0; i < aluno.notas.length; i++){
+            for (int j = 0; j < aluno.notas[i].length;j++){
                 System.out.println("Digite a nota: ");
-                aluno.disciplinas[i][j] = sc.nextLine();
+                aluno.notas[i][j] = sc.nextDouble();
             }
+            System.out.println();
         }
 
             aluno.dadosPessoais();
