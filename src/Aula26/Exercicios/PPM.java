@@ -5,7 +5,7 @@ public class PPM {
    /* double contaPPP (double Ppl){
         return Ppl / 3;
     }
-    double PPP(double linhas){
+    double PPP(double contaPPP(Ppl), double linhas){
         return contaPPP(Ppl) * linhas;
     }
 

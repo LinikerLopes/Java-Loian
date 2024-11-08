@@ -2,18 +2,20 @@ package Aula24Exerc.Lampada;
 
 public class Exec1 {
 
-    String tipo;
-    String marca;
+    boolean ligado = true;
 
-    String modelo;
-    boolean ligadoDesligado;
-
-        void ligar(){
-            ligadoDesligado = true;
+    void ligar(){
+        ligado = true;
+    }
+    void desligar(){
+        ligado = false;
+    }
+    void mudarEstado(){
+        if(ligado){
+            ligado = true;
         }
-        void desligado(){
-            ligadoDesligado = false;
+        else{
+            ligado = false;
         }
-
-
+    }
 }

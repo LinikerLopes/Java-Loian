@@ -13,7 +13,7 @@ public class main {
        /* System.out.println("Calcular PPL ");
         System.out.println("Digite o PPL (Numero de palavras nas 3 primeiras linhas: ");
         int Ppl = sc.nextInt();
-        calculoPPM.contaPPP(Ppl);
+        double palavraPorLinha = calculoPPM.contaPPP(Ppl);
 
         System.out.println();
         System.out.println("Digite o numero de linhas da página: ");
@@ -30,9 +30,6 @@ public class main {
         double PPm = calculoPPM.contaPPM(Ppl, tempo, numeroPaginasLidas);
         System.out.println(PPm);
 */
-        System.out.println("Contagem de Paginas por Minuto (PPM)");
-        System.out.println();
-
         // Entrada e cálculo de PPL
         System.out.print("Digite o PPL (Número de palavras nas 3 primeiras linhas): ");
         double Ppl = sc.nextDouble();
@@ -58,7 +55,6 @@ public class main {
         double PPm = calculoPPM.contaPPM(palavrasPorPagina, numeroPaginasLidas, tempo);
         System.out.println();
 
-        System.out.println();
         System.out.println("Seu PPM na leitura nesses " + tempo + " minutos foi de " + PPm + " ppm");
 
 
