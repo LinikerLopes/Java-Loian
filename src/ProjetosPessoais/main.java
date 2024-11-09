@@ -1,4 +1,4 @@
-package Aula26.Exercicios;
+package ProjetosPessoais;
 
 import java.util.Scanner;
 

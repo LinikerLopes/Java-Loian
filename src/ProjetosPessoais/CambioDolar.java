@@ -1,3 +1,5 @@
+package ProjetosPessoais;
+
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
@@ -50,6 +52,8 @@ public class CambioDolar {
             // Exibir a cotação do dólar
             System.out.printf("Cotação do dólar comercial: R$ %.2f", cotacaoUSD);
             System.out.println();
+
+
 
 
             //Calculo da Cotação

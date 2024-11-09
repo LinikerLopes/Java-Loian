@@ -26,7 +26,7 @@ public class MainContaCorrente {
             if(escolha == 1){
                 System.out.println("Digite valor do saque:");
                 conta.saque = sc.nextDouble();
-                conta.realizarSaque();
+                conta.realizarSaque(conta.saque);
             }
             else if(escolha == 2){
                 System.out.println("Quanto deseja depositar?");

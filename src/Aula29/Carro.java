@@ -7,4 +7,9 @@ public class Carro {
     int numPassageiros;
     double capCombustivel;
     double consumoCombustivel;
+
+    Carro(){
+        System.out.println("Classe carro foi instanciado");
+        numPassageiros = 4;
+    }
 }

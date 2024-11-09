@@ -23,9 +23,20 @@ public class Aluno {
             }
             System.out.println();
         }
+    }
+
+    boolean verificarGraduado(int indice){
+        double soma = 0;
+        for(int i = 0; i < notas[indice].length; i++){
+            soma += notas[indice][i];
         }
+        double media = soma / 4;
+
+        if(media > 7){
+            return true;
+        }
+        return false;
+    }
 
     }
-   /* double notas(double score){
 
-    }*/
