@@ -32,6 +32,14 @@ public class MainAluno {
 
             aluno.dadosPessoais();
 
+            for(int i = 0; i < aluno.disciplinas.length; i++){
+                if(aluno.verificarGraduado(i)){
+                    System.out.println("Disciplina " + aluno.disciplinas[i] + " - foi aprovado");
+                }else{
+                    System.out.println("Disciplina " + aluno.disciplinas[i] + " - foi reprovado");
+
+                }
+            }
 
     }
 }
