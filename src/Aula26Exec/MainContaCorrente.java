@@ -6,7 +6,7 @@ public class MainContaCorrente {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         ContaCorrente conta = new ContaCorrente();
-        conta.saldo = 2500.00;
+        conta.saldo = 0;
         System.out.println("Bem vindo ao banco GNB");
         System.out.println("Conta: " + conta.numeroConta);
         System.out.println("=============================");

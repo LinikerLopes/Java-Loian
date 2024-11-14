@@ -11,8 +11,9 @@ public class Livro {
     //métodos
 
         //emprestar
-    void emprestarLivro(){
+    boolean emprestarLivro(){
         //aqui mudar estado de disponivel para false
+        return true;
     }
         //devolver
     void devolverLivro(){

@@ -21,14 +21,17 @@ Abstração: Enfatiza os aspectos essenciais e esconde detalhes supérfluos. No 
 ## Estrutura do Sistema
 
 Classes Principais
+
 Livro
 
 Atributos: título, autor, ano, disponível (booleano).
 Métodos: emprestar, devolver, exibirInfo.
+
 Usuario
 
 Atributos: nome, livrosEmprestados (lista de livros).
 Métodos: pegarEmprestado, devolverLivro, exibirInfo.
+
 Biblioteca
 
 Atributos: listaDeLivros, historicoEmprestimos.

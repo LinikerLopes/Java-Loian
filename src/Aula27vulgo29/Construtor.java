@@ -19,4 +19,11 @@ String ano;
         this(marca, modelo, "2010");
         System.out.println("Construtor com 2");
     }
+
+    public String getMarca(){
+        return this.marca;
+    }
+    public void setMarca(){
+        this.marca = marca;
+    }
 }
