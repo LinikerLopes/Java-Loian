@@ -11,10 +11,15 @@ public class Data {
         TesteData teste = new TesteData();
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("Sigite um numero" );
+        System.out.println("Digite um numero" );
         int num = sc.nextInt();
         System.out.println(teste.calculaFatorial(num));
         System.out.println(d1);
+
+        System.out.println("Digite outro numero");
+        int num2 = sc.nextInt();
+        TesteData.fibonacci(num2);
+        System.out.println(TesteData.fibonacci(num2));
 
     }
 }
