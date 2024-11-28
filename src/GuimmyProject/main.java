@@ -18,7 +18,7 @@ public class main {
         boolean opcao = false;
         while (!opcao) {
             System.out.println("Escolha uma opção:");
-            System.out.println("1 - Informação de um livro");
+            System.out.println("1 - Cadastro de livro");
             System.out.println("2 - Alugar livro");
             System.out.println("3 - Devolver livro");
             System.out.println("4 - Exibir informacao livro");
@@ -28,8 +28,6 @@ public class main {
             if (escolha == 1) {
                 System.out.println("Digite o Nome/ISBN do livro: ");
                 sc.nextLine();
-                String input = sc.nextLine();
-                classe.dados(input);
 
 
             } else if (escolha == 2) {
@@ -40,7 +38,9 @@ public class main {
                 String infoLivro = sc.nextLine();
             } else if (escolha == 4) {
                 System.out.println("Digite o Nome/ISBN do livro: ");
-                String infoLivro = sc.nextLine();
+                sc.nextLine();
+                String input = sc.nextLine();
+                classe.dados(input);
             } else if (escolha == 5) {
                 System.out.println("Obrigado por utilizar nossos serviços.");
                 System.out.println("Ate a próxima!");
