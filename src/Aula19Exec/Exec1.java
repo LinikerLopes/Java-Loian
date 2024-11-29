@@ -8,11 +8,11 @@ public class Exec1 {
         double[] A = new double[5];
         double[] B = new double[A.length];
 
-            for (int i = 0; i < A.length; i++){
-                System.out.println("Entre com o valor da posicao: " + i);
-                A[i] = sc.nextDouble();
-                B[i] = A[i];
-            }
+        for (int i = 0; i < A.length; i++){
+            System.out.println("Entre com o valor da posicao: " + i);
+            A[i] = sc.nextDouble();
+            B[i] = A[i];
+        }
 
       /*  for (int i = 0; i < A.length; i++){
 
