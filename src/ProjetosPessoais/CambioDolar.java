@@ -77,7 +77,6 @@ public class CambioDolar {
                 System.out.printf("Convertido ficou em: $ %.2f", conversao);
                 System.out.println(" dólares.");
                 System.out.println();
-                System.out.println("Troco: ");
                 System.out.println("Digite o valor da nota recebida ou total da soma delas: ");
                 double notaRecebida = sc.nextDouble();
                 double troco = notaRecebida - conversao;
