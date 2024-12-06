@@ -23,6 +23,7 @@ public class main {
             System.out.println("3 - Devolver livro");
             System.out.println("4 - Exibir informacao livro");
             System.out.println("5 - Sair");
+            System.out.print("Digite o número correspondente: ");
             int escolha = sc.nextInt();
 
             if (escolha == 1) {
