@@ -11,12 +11,13 @@ public class main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Dados dados = new Dados();
+
         dados.saudacao();
 
         ClasseTesteAPI classe = new ClasseTesteAPI();
 
-        boolean opcao = false;
-        while (!opcao) {
+        int opcao;
+        do {
             System.out.println("Escolha uma opção:");
             System.out.println("1 - Cadastro de livro");
             System.out.println("2 - Alugar livro");
@@ -24,29 +25,41 @@ public class main {
             System.out.println("4 - Exibir informacao livro");
             System.out.println("5 - Sair");
             System.out.print("Digite o número correspondente: ");
-            int escolha = sc.nextInt();
+            opcao = sc.nextInt();
+            System.out.println();
 
-            if (escolha == 1) {
-                System.out.println("Digite o Nome/ISBN do livro: ");
+            if (opcao == 1) {
+                System.out.println("ID: ");
+                int id = sc.nextInt();
+                sc.nextLine();
+                System.out.println("nome: ");
+                String nome= sc.nextLine();
+                System.out.println("autor: ");
+                String autor = sc.nextLine();
+                System.out.println("ano: ");
+                int anoPublicacao = sc.nextInt();
+                Livro livros = new Livro(id, nome, autor, anoPublicacao);
+                System.out.println();
+                    livros.exibirInfo();
+                System.out.println();
                 sc.nextLine();
 
 
-            } else if (escolha == 2) {
+            } else if (opcao == 2) {
                 System.out.println("Digite o Nome/ISBN do livro: ");
                 String infoLivro = sc.nextLine();
-            } else if (escolha == 3) {
+            } else if (opcao == 3) {
                 System.out.println("Digite o Nome/ISBN do livro: ");
                 String infoLivro = sc.nextLine();
-            } else if (escolha == 4) {
+            } else if (opcao == 4) {
                 System.out.println("Digite o Nome/ISBN do livro: ");
                 sc.nextLine();
                 String input = sc.nextLine();
                 classe.dados(input);
-            } else if (escolha == 5) {
+            } else if (opcao == 5) {
                 System.out.println("Obrigado por utilizar nossos serviços.");
                 System.out.println("Ate a próxima!");
                 System.out.println("Livraria do Guimmy");
-                opcao = true;
             } else {
                 System.out.println("Opção inválida. Por favor digitar uma opção válida");
             }
@@ -58,6 +71,6 @@ public class main {
         livro.anoPublicacao = 2000;
 
        livro.exibirInfo();*/
-        }
+        } while (opcao != 5) ;
     }
 }

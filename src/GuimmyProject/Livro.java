@@ -2,7 +2,7 @@ package GuimmyProject;
 
 public class Livro {
     //atributos
-
+    int id;
     String nome;
     String autor;
     int anoPublicacao;
@@ -21,7 +21,16 @@ public class Livro {
 }
         //exibirInfo
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     void exibirInfo(){
+        System.out.println("ID do Livro: " + id);
         System.out.println("Título do livro: " + nome);
         System.out.println("Autor do livro: " + autor);
         System.out.println("Ano de publicação do Livro: " + anoPublicacao);
@@ -59,6 +68,16 @@ public class Livro {
 
     public void setDisponivel(boolean disponivel) {
         this.disponivel = disponivel;
+    }
+
+
+        //CREATE - adicionando livro
+    public Livro(int id, String nome, String autor, int anoPublicacao){
+        this.id = id;
+        this.nome = nome;
+        this.autor = autor;
+        this.anoPublicacao = anoPublicacao;
+        System.out.println("Livro registrado");
     }
 
 

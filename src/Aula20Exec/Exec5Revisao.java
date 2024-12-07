@@ -20,6 +20,7 @@ boolean opcao = false;
             System.out.println("3 - Deletar compromisso");
             System.out.println("4 - Atualizar compromisso");
             System.out.println("0 - Sair");
+            System.out.print("Digite sua opcao: ");
             int escolha = sc.nextInt();
 //======================================================================================================================
             if (escolha == 1) {
