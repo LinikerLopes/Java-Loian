@@ -18,12 +18,15 @@ public class main {
 
         int opcao;
         do {
+
+
             System.out.println("Escolha uma opção:");
             System.out.println("1 - Cadastro de livro");
             System.out.println("2 - Alugar livro");
             System.out.println("3 - Devolver livro");
-            System.out.println("4 - Exibir informacao livro");
-            System.out.println("5 - Sair");
+            System.out.println("4 - Lista de livros");
+            System.out.println("5 - Exibir informacao livro");
+            System.out.println("6 - Sair");
             System.out.print("Digite o número correspondente: ");
             opcao = sc.nextInt();
             System.out.println();
@@ -40,7 +43,7 @@ public class main {
                 int anoPublicacao = sc.nextInt();
                 Livro livros = new Livro(id, nome, autor, anoPublicacao);
                 System.out.println();
-                    livros.exibirInfo();
+                  //  livros.exibirInfo(); //vai retornar oq adicionei
                 System.out.println();
                 sc.nextLine();
 
@@ -48,15 +51,20 @@ public class main {
             } else if (opcao == 2) {
                 System.out.println("Digite o Nome/ISBN do livro: ");
                 String infoLivro = sc.nextLine();
-            } else if (opcao == 3) {
+            }
+            else if (opcao == 3) {
                 System.out.println("Digite o Nome/ISBN do livro: ");
                 String infoLivro = sc.nextLine();
-            } else if (opcao == 4) {
+            }
+            else if (opcao == 4) {
+                System.out.println("Ainda em falta");
+            }
+            else if (opcao == 5) {
                 System.out.println("Digite o Nome/ISBN do livro: ");
                 sc.nextLine();
                 String input = sc.nextLine();
                 classe.dados(input);
-            } else if (opcao == 5) {
+            } else if (opcao == 6) {
                 System.out.println("Obrigado por utilizar nossos serviços.");
                 System.out.println("Ate a próxima!");
                 System.out.println("Livraria do Guimmy");
@@ -71,6 +79,6 @@ public class main {
         livro.anoPublicacao = 2000;
 
        livro.exibirInfo();*/
-        } while (opcao != 5) ;
+        } while (opcao != 6) ;
     }
 }

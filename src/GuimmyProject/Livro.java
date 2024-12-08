@@ -29,7 +29,7 @@ public class Livro {
         this.id = id;
     }
 
-    void exibirInfo(){
+    public void exibirInfo(){
         System.out.println("ID do Livro: " + id);
         System.out.println("Título do livro: " + nome);
         System.out.println("Autor do livro: " + autor);
