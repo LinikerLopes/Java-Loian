@@ -25,7 +25,7 @@ public class main {
             System.out.println("2 - Alugar livro");
             System.out.println("3 - Devolver livro");
             System.out.println("4 - Lista de livros");
-            System.out.println("5 - Exibir informacao livro");
+            System.out.println("5 - Exibir informacao de livro (online)");
             System.out.println("6 - Sair");
             System.out.print("Digite o número correspondente: ");
             opcao = sc.nextInt();

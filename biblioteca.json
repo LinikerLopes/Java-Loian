@@ -1,0 +1,3 @@
+{"listaDeLivros":[{"titulo":"Marley e eu","autor":"John Grogan","ano":2000,"disponivel":false},
+  {"titulo":"Harry Potter e a pedra filosofal","autor":"JK Rowling","ano":2000,"disponivel":true},
+  {"titulo":"Harry Potter e a câmara secreta","autor":"JK Rowling","ano":2002,"disponivel":true}],"historicoEmprestimos":["Liniker emprestou Marley e eu"]}

@@ -1,8 +1,9 @@
 package GuimmyProject;
 
-public class Usuario {
+public class Pessoa {
     //info usuario
     String nome;
+
 
 
 
