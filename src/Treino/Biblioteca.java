@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Biblioteca {
-    private List<Livro> listaDeLivros;
+    private List<Livro> listaDeLivros; // arraylist
     private List<String> historicoEmprestimos;
     private static final String FILE_NAME = "biblioteca.json";
 
@@ -38,11 +38,22 @@ public class Biblioteca {
     public void registrarEmprestimo(Usuario usuario, Livro livro) {
         if (livro.isDisponivel()) {
             usuario.pegarEmprestado(livro);
-            historicoEmprestimos.add(usuario.getNome() + " emprestou " + livro.getTitulo());
+            historicoEmprestimos.add(usuario.getNome() + " pegou emprestado " + livro.getTitulo());
             salvarDados(); // Salvar os dados após o empréstimo
             System.out.println("Empréstimo registrado com sucesso.");
         } else {
             System.out.println("Livro não disponível para registro de empréstimo.");
+        }
+    }
+
+    public void registrarDevolucao(Usuario usuario, Livro livro) {
+        if (!livro.isDisponivel()) {
+            usuario.devolverLivro(livro);
+            historicoEmprestimos.add(usuario.getNome() + " devolveu o livro  " + livro.getTitulo());
+            salvarDados(); // Salvar os dados após o empréstimo
+            System.out.println("Devolução registrado com sucesso.");
+        } else {
+            System.out.println("Livro não disponível para registro de devolução.");
         }
     }
 

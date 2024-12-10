@@ -27,7 +27,9 @@ public class Main {
             System.out.println("3 - Emprestar Livro");
             System.out.println("4 - Devolver Livro");
             System.out.println("5 - Listar Livros");
-            System.out.println("6 - Sair");
+            System.out.println("6 - Historico");
+            System.out.println("7 - Exibir informação");
+            System.out.println("8 - Sair");
             System.out.print("Digite sua opção: ");
             opcao = sc.nextInt();
             sc.nextLine(); // Consumir a quebra de linha restante
@@ -91,6 +93,7 @@ public class Main {
                     for (Livro l : usuario.getLivrosEmprestados()) {
                         if (l.getTitulo().equalsIgnoreCase(tituloDevolver)) {
                             usuario.devolverLivro(l);
+                            biblioteca.registrarDevolucao(usuario, l);
                             break;
                         }
                     }
@@ -102,6 +105,16 @@ public class Main {
                     break;
 
                 case 6:
+                    System.out.println("Historico de emprestimos");
+                    biblioteca.listarHistorico();
+                    break;
+
+                case 7:
+                    System.out.println("Informação: ");
+                   // livro.exibirInfo();
+                    break;
+
+                case 8:
                     System.out.println("Saindo do sistema...");
                     break;
 
@@ -109,7 +122,7 @@ public class Main {
                     System.out.println("Opção inválida. Tente novamente.");
                     break;
             }
-        } while (opcao != 6);
+        } while (opcao != 8);
 
 
 
