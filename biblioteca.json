@@ -1,1 +1,19 @@
-{"listaDeLivros":[{"titulo":"Marley e eu","autor":"John Grogan","ano":2000,"disponivel":false},{"titulo":"Inteligencia emocional","autor":"Psicologo","ano":2023,"disponivel":true}],"historicoEmprestimos":["Liniker pegou emprestado Marley e eu"]}
+{
+  "listaDeLivros": [
+    {
+      "titulo": "Marley e eu",
+      "autor": "John Grogan",
+      "ano": 2000,
+      "disponivel": false
+    },
+    {
+      "titulo": "Inteligencia emocional",
+      "autor": "Psicologo",
+      "ano": 2023,
+      "disponivel": true
+    }
+  ],
+  "historicoEmprestimos": [
+    "Liniker pegou emprestado Marley e eu"
+  ]
+}
