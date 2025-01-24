@@ -67,6 +67,7 @@ public class CambioDolar {
             System.out.println("Gostaria de fazer a conversão?");
             System.out.println("1 - Sim");
             System.out.println("2 - Não");
+            System.out.print("Digite sua escolha: ");
             int num = sc.nextInt();
             if(num == 1){
                 System.out.println("Convertendo real para dólar:  ");
@@ -77,7 +78,7 @@ public class CambioDolar {
                 System.out.printf("Convertido ficou em: $ %.2f", conversao);
                 System.out.println(" dólares.");
                 System.out.println();
-                System.out.println("Digite o valor da nota recebida ou total da soma delas: ");
+                System.out.println("Digite o valor da nota em dólar recebida ou total da soma delas: ");
                 double notaRecebida = sc.nextDouble();
                 double troco = notaRecebida - conversao;
 
