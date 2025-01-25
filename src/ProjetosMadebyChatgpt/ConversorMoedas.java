@@ -22,7 +22,7 @@ public class ConversorMoedas {
             System.out.println("1 - Dólar");
             System.out.println("2 - Euro");
             System.out.println("3 - Libra");
-            System.out.println("4 - Yene");
+            System.out.println("4 - Yene Japonês");
             System.out.println("5 - Sair");
 
             System.out.print("Digite sua opcao: ");
@@ -77,7 +77,7 @@ public class ConversorMoedas {
             }
             if (selecao == 2) {
                 try {
-                    // URL da API da AwesomeAPI para pegar a cotação do dólar
+                    // URL da API da AwesomeAPI para pegar a cotação do euro
                     String url = "https://economia.awesomeapi.com.br/json/last/EUR-BRL";
 
                     // Conexão HTTP
@@ -108,6 +108,13 @@ public class ConversorMoedas {
                     // Exibir a cotação do dólar
                     System.out.printf("Cotação do euro comercial: R$ %.2f", cotacaoEUR);
                     System.out.println();
+                    System.out.println();
+
+                    System.out.println("Digite o valor em euros: ");
+                    double euroVALOR = sc.nextDouble();
+                    double cambioREAL = euroVALOR * cotacaoEUR;
+
+                    System.out.printf("Valor convertido: R$ %.2f" ,cambioREAL);
                     System.out.println();
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -148,6 +155,13 @@ public class ConversorMoedas {
                     System.out.printf("Cotação do libra esterlina comercial: R$ %.2f", cotacaoGBP);
                     System.out.println();
                     System.out.println();
+
+                    System.out.println("Digite o valor em libra esterlina: ");
+                    double libraVALOR = sc.nextDouble();
+                    double cambioREAL = libraVALOR * cotacaoGBP;
+
+                    System.out.printf("Valor convertido: R$ %.2f" ,cambioREAL);
+                    System.out.println();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -185,6 +199,13 @@ public class ConversorMoedas {
                     // Exibir a cotação do dólar
                     System.out.printf("Cotação do yene comercial: R$ %.2f", cotacaoJPY);
                     System.out.println();
+                    System.out.println();
+
+                    System.out.println("Digite o valor em yene japonês: ");
+                    double yeneVALOR = sc.nextDouble();
+                    double cambioREAL = yeneVALOR * cotacaoJPY;
+
+                    System.out.printf("Valor convertido: R$ %.2f" ,cambioREAL);
                     System.out.println();
                 } catch (Exception e) {
                     e.printStackTrace();
