@@ -63,7 +63,7 @@ public class ConversorMoedas {
                     System.out.println();
                     System.out.println();
 
-                    System.out.println("Digite o valor em dólares: ");
+                    System.out.print("Digite o valor em dólares: ");
                     double dolarVALOR = sc.nextDouble();
                     double cambioREAL = dolarVALOR * cotacaoUSD;
 
@@ -110,7 +110,7 @@ public class ConversorMoedas {
                     System.out.println();
                     System.out.println();
 
-                    System.out.println("Digite o valor em euros: ");
+                    System.out.print("Digite o valor em euros: ");
                     double euroVALOR = sc.nextDouble();
                     double cambioREAL = euroVALOR * cotacaoEUR;
 
@@ -156,7 +156,7 @@ public class ConversorMoedas {
                     System.out.println();
                     System.out.println();
 
-                    System.out.println("Digite o valor em libra esterlina: ");
+                    System.out.print("Digite o valor em libra esterlina: ");
                     double libraVALOR = sc.nextDouble();
                     double cambioREAL = libraVALOR * cotacaoGBP;
 
@@ -201,7 +201,7 @@ public class ConversorMoedas {
                     System.out.println();
                     System.out.println();
 
-                    System.out.println("Digite o valor em yene japonês: ");
+                    System.out.print("Digite o valor em yene japonês: ");
                     double yeneVALOR = sc.nextDouble();
                     double cambioREAL = yeneVALOR * cotacaoJPY;
 
